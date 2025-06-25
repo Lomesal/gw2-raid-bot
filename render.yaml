@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gw2-raid-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python gw2_raid_bot.py"
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+    plan: free
