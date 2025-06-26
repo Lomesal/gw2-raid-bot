@@ -1,7 +1,9 @@
+
 services:
   - type: web
     name: gw2-raid-bot
     runtime: python
+    pythonVersion: 3.10
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python gw2_raid_bot.py"
     envVars:
